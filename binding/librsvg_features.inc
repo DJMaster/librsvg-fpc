@@ -7,8 +7,8 @@
 const
   _LIBRSVG_MAJOR_VERSION = 2;
   _LIBRSVG_MINOR_VERSION = 40;
-  _LIBRSVG_MICRO_VERSION = 17;
-  _LIBRSVG_VERSION = '2.40.17';
+  _LIBRSVG_MICRO_VERSION = 18;
+  _LIBRSVG_VERSION = '2.40.18';
 
 function librsvg_check_version(major,minor,micro: cint): gboolean; cdecl; inline;
 
