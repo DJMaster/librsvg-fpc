@@ -226,6 +226,8 @@ function rsvg_handle_new_from_stream_sync(input_stream: PGInputStream; base_file
 function rsvg_handle_new_from_data(const data: Pguint8; data_len: gsize; error: PPGError): PRsvgHandle; cdecl; external LIB_RSVG;
 function rsvg_handle_new_from_file(const file_name: Pgchar; error: PPGError): PRsvgHandle; cdecl; external LIB_RSVG;
 
+procedure rsvg_handle_internal_set_testing(handle: PRsvgHandle; testing: gboolean); cdecl; external LIB_RSVG;
+
 (* BEGIN deprecated APIs. Do not use! *)
 
 procedure rsvg_init(); cdecl; external LIB_RSVG; (* RSVG_DEPRECATED_FOR(g_type_init) *)
